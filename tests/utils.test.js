@@ -29,14 +29,20 @@ it("should say hello", function() {
 it("Should return length x Width", function()  {
   const area = utils.area(2, 4)
   expect(area).to.be.equal(8)
+  const neg = utils.area(2, -7)
+  expect(neg).to.be.equal(null)
 })
 it("Should return 2length + 2Width", function() {
   const perimeter = utils.perimeter(5, 5)
   expect(perimeter).to.be.equal(20)
+  const neg = utils.perimeter(2, -7)
+  expect(neg).to.be.equal(null)
 })
 it("Should return area of circle given a radius", function(){
   const circle = utils.circleArea(2)
   expect(circle).to.be.equal(12.56)
+  const neg = utils.circleArea(-7)
+  expect(neg).to.be.equal(null)
 })
 
 

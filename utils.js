@@ -7,15 +7,30 @@ const sayHello = () => {
 }
 
 const area = (w, h) => {
-  return w * h
+  const resp = w * h
+  if (resp < 0) {
+    return null
+  } else {
+    return resp
+  }
 }
 
 const perimeter = (w, h) => {
-  return ((2 * h) + (2 * w))
+  const resp = (2 * w) + (2 * h)
+  if (resp < 0) {
+    return null
+  } else {
+    return resp
+  }
 }
 
 const circleArea = r => {
-  return r * r * 3.14
+  const resp =  r * r * 3.14
+  if (r < 0) {
+    return null
+  } else {
+    return resp
+  }
 }
 
 // ========================================================
