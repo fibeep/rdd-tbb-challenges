@@ -82,7 +82,16 @@ it("Should add a new item to the shopping cart", function(){
   expect(cart[0]).to.have.property("quantity", 1)
 })
 
-it("Should return the number of items in the cart")
+it("Should return the number of items in the cart", function(){
+  const item = utils.createItem("apple", 0.99)
+  const item2 = utils.createItem("banana", 2.99)
+  utils.addItemToCart(item)
+  utils.addItemToCart(item)
+  utils.addItemToCart(item2)
+  const cart_size = utils.getNumItemsInCart()
+  expect(cart_size).to.be.a("Number")
+  expect(cart_size).to.equal(3)
+})
 
 it("Should remove items from cart")
 

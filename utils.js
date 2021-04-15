@@ -65,6 +65,7 @@ const addItemToCart = (item) => {
 
 const getNumItemsInCart = () => {
   // should return the total quantity of items in cart
+  return shoppingCart.length
 }
 
 const removeItemFromCart = (item) => {
