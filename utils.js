@@ -7,7 +7,7 @@ const sayHello = () => {
 }
 
 const area = (w, h) => {
-  // should return the area
+  return w * h
 }
 
 const perimeter = (w, h) => {

@@ -26,7 +26,12 @@ it("should say hello", function() {
 // This is called "Red-Green-Refactor"
 // ========================================================
 
-
+it("Should return length x Width", function()  {
+  const area = utils.area(2, 4)
+  expect(area).to.be.equal(8)
+})
+it("Should return 2length + 2Width")
+it("Should return area of circle given a radius")
 
 
 // ========================================================
