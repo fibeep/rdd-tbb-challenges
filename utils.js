@@ -11,11 +11,11 @@ const area = (w, h) => {
 }
 
 const perimeter = (w, h) => {
-  // should return the perimeter
+  return ((2 * h) + (2 * w))
 }
 
 const circleArea = r => {
-  // should return the area of the circle
+  return r * r * 3.14
 }
 
 // ========================================================

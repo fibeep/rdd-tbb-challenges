@@ -30,8 +30,14 @@ it("Should return length x Width", function()  {
   const area = utils.area(2, 4)
   expect(area).to.be.equal(8)
 })
-it("Should return 2length + 2Width")
-it("Should return area of circle given a radius")
+it("Should return 2length + 2Width", function() {
+  const perimeter = utils.perimeter(5, 5)
+  expect(perimeter).to.be.equal(20)
+})
+it("Should return area of circle given a radius", function(){
+  const circle = utils.circleArea(2)
+  expect(circle).to.be.equal(12.56)
+})
 
 
 // ========================================================
