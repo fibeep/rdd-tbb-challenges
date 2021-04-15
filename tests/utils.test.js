@@ -93,7 +93,19 @@ it("Should return the number of items in the cart", function(){
   expect(cart_size).to.equal(3)
 })
 
-it("Should remove items from cart")
+it("Should remove items from cart", function(){
+  const item = utils.createItem("apple", 0.99)
+  const item2 = utils.createItem("banana", 2.99)
+  utils.addItemToCart(item)
+  utils.addItemToCart(item)
+  utils.addItemToCart(item2)
+  utils.removeItemFromCart(item2)
+  const cart = utils.getShoppingCart()
+  const cart_size = utils.getNumItemsInCart()
+  expect(cart_size).to.be.a("Number")
+  expect(cart_size).to.equal(2)
+  expect(cart).to.not.include(item2)
+})
 
 // ========================================================
 // Stretch Challenges

@@ -69,7 +69,10 @@ const getNumItemsInCart = () => {
 }
 
 const removeItemFromCart = (item) => {
-  // should remove item from shopping cart
+  const index = shoppingCart.indexOf(item)
+  if (index != -1){
+  shoppingCart.splice(index, 1)
+  }
 }
 
 module.exports = {
