@@ -52,10 +52,15 @@ const createItem = (name, price) => {
 
 const getShoppingCart = () => {
   // should return the current state of shopping cart
+  // console.log(shoppingCart)
+  return shoppingCart
 }
 
 const addItemToCart = (item) => {
   // should add item to shopping cart
+  shoppingCart.push(item)
+  // console.log(`Shopping cart has: ${shoppingCart}`)
+  return shoppingCart
 }
 
 const getNumItemsInCart = () => {
